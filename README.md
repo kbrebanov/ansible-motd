@@ -11,26 +11,33 @@ This role requires Ansible 1.4 or higher.
 Role Variables
 --------------
 
-    motd_ascii_logo:
-    motd_message:
+| Name            | Default                           | Description                               |
+|-----------------|-----------------------------------|-------------------------------------------|
+| motd_ascii_logo | ""                                | ASCII logo to be displayed before message |
+| motd_message    | Welcome to {{ ansible_hostname }} | MOTD message                              |
 
 Dependencies
 ------------
 
+CentOS:
+  - kbrebanov.selinux
+
 Example Playbook
 ----------------
 
-1) Generate MOTD file using default ASCII logo and message.
+Generate MOTD file using default ASCII logo and message.
+```
+- hosts: all
+  roles:
+    - { role: kbrebanov.motd }
+```
 
-    - hosts: all
-      roles:
-         - { role: motd }
-
-2) Generate MOTD file using default ASCII logo and custom message.
-
-    - hosts: all
-      roles:
-         - { role: motd, motd_message: This is the new message }
+Generate MOTD file using default ASCII logo and custom message.
+```
+- hosts: all
+  roles:
+    - { role: kbrebanov.motd, motd_message: This is the new message }
+```
 
 License
 -------
