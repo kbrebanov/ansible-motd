@@ -1,6 +1,8 @@
 motd
 ====
 
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-kbrebanov.motd-660198.svg)](https://galaxy.ansible.com/list#/roles/3305)
+
 Generate MOTD file.
 
 Requirements
