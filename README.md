@@ -1,7 +1,7 @@
 motd
 ====
 
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-kbrebanov.motd-660198.svg)](https://galaxy.ansible.com/list#/roles/3305)
+[![Ansible Role](https://img.shields.io/ansible/role/3305.svg)](https://galaxy.ansible.com/list#/roles/3305)
 
 Generate MOTD file.
 
