@@ -28,17 +28,19 @@ Example Playbook
 ----------------
 
 Generate MOTD file using default ASCII logo and message.
-```
+```yaml
 - hosts: all
   roles:
-    - { role: kbrebanov.motd }
+    - kbrebanov.motd
 ```
 
 Generate MOTD file using default ASCII logo and custom message.
-```
+```yaml
 - hosts: all
+  vars:
+    motd_message: This is the new message
   roles:
-    - { role: kbrebanov.motd, motd_message: This is the new message }
+    - kbrebanov.motd
 ```
 
 License
