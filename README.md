@@ -8,13 +8,13 @@ Generate MOTD file.
 Requirements
 ------------
 
-This role requires Ansible 1.4 or higher.
+This role requires Ansible 1.9 or higher.
 
 Role Variables
 --------------
 
 | Name            | Default                           | Description                               |
-|-----------------|-----------------------------------|-------------------------------------------|
+|:----------------|:----------------------------------|:------------------------------------------|
 | motd_ascii_logo | ""                                | ASCII logo to be displayed before message |
 | motd_message    | Welcome to {{ ansible_hostname }} | MOTD message                              |
 
